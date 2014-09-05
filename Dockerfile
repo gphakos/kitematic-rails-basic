@@ -11,6 +11,9 @@ RUN apt-get update -qq && \
     gem update --system && \
     gem install bundler
 
+
+USER railsapp
+
 RUN gem install rails
 
 RUN gem install sqlite3 -v '1.3.9'
