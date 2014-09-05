@@ -28,5 +28,5 @@ WORKDIR /app
 RUN bundle install
 
 EXPOSE 80
-
-CMD bundle exec rails server -p 80
+#seems hacky to use cd... research fix
+CMD cd /app; bundle exec rails server -p 80
