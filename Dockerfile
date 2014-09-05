@@ -18,9 +18,6 @@ RUN gem install rails
 
 RUN gem install sqlite3 -v '1.3.9'
 
-# needs to be globally installed or commented out of Gemfile
-RUN gem install spring
-
 ADD ./volumes/app /app
 VOLUME ["/app"]
 
